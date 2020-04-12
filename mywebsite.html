@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>SAURAV BORAH.COM</h1>
+<hr>
+
+<h2>MY LIFE</h2>
+<p>Resize the browser window to see the responsive effect.</p>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="download.jfif" alt="football" style="width:100%">
+      <h3>FAVOURITE FOOTBALLER</h3>
+      <p>Lionel Andrés Messi Cuccittini is an Argentine professional footballer who plays as a forward and captains both Spanish club Barcelona and the Argentina national team</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="gaming.jfif" alt=gaming style="width:100%">
+      <h3>LIST OF GAMES I LIKE:</h3>
+      <p>1)FIFA<br>2)CALL OF DUTY<br>3)BATTLEFIELD<br>4)FAR CRY<br>5)GTA</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images.png" alt="LESSON" style="width:100%">
+      <h3>LIFE LESSON:</h3>
+      <p>Identity is a prison you can never escape, but the way to redeem your past is not to run from it, but to try to understand it, and use it as a foundation to grow.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="61abSt6nFaL.jpg" alt="STRENGTHS" style="width:100%">
+      <h3>MY STRENGTHS:</h3>
+      <p>Enthusiasm<br>
+        Trustworthiness<br>
+        Creativity<br>
+        Discipline<br>
+        Patience<br>
+        Respectfulness<br>
+        Determination<br>
+        Dedication<br>
+        Honesty<br>
+        Versatility</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+<hr>
+<h3>WANNA HELP ME WITH MY WORK , PLEASE LET ME KNOW BY FILLING THE BELOW DETAILS</h3>
+<form>
+  <label for="fname">YOUR FIRST NAME:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">YOUR LAST NAME:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <p>GENDER:</p>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">MALE</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">FEMALE</label><br>
+  <input type="radio" id="others" name="gender" value="others">
+  <label for="others">OTHERS</label><br><br>
+  <label for="birthday">ENTER YOUR BIRTHDAY:</label>
+  <input type="date" id="birthday" name="birthday" ><br><br>
+  <p>YOUR PROFESSION:</p>
+  <select id="profession" name="profession">
+    <option value="student">STUDENT</option>
+    <option value="engineer">ENGINEER</option>
+    <option value="doctor">DOCTOR</option>
+    <option value="govrenment sector">GOVERNMENT SECTOR</option>
+    <option value="any other">ANY OTHER</option>
+  </select><br><br>
+  <p id="demo1"></p>
+  <input type="submit" value="SUBMIT" onclick="document.getElementById('demo1').innerHTML='FORM SUBMITTED SUCCESSFULLY'">
+  <hr>
+  <h3>HOW MAY I REACH YOU:</h3>
+  <label for="mobile">YOUR MOBILE NUMBER:</label>
+  <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}"><br><br>
+  <label for="email">YOUR EMAIL:</label>
+  <input type="email" id=email name="email"><br><br>
+  <input type="submit" value="SUBMIT">
+  <hr>
+  <h3>LETS PLAY A GAME:</h3>
+  <p>PLAY ONLY IF YOU GOT GUTS:</p>
+  <p style="color: red;">CHOOSE ANY ONE OF THE FOLLOWING OPTIONS AND AFTER THAT FOLLOW AS MENTIONED IN IT:</p>
+  <button type="button" onclick="alert('TEXT YOUR CRUSH AND SAY THAT YOU LIKE HER VERY MUCH AND ATTACH THE SCREENSHOT AS A PROOF')">OPTION 1</button><br>
+  <button type="button" onclick="alert('ATTACH THE FUNNIEST PIC OF YOURS')">OPTION 2</button><br>
+  <button type="button" onclick="alert('SING A BHOJPURI SONG AND SEND ME THE AUDIO')">OPTION 3</button><br>
+  <button type="button" onclick="alert('WRITE A PROGRAM IN ANY PROGRAMMING LANGUAGE TO PRINT WHETHER A NUMBER IS ARMSTRONG NUMBER OR NOT. SAVE THE PROGRAM AND ATTACH IT BELOW')">OPTION 4</button><br>
+  <br>
+  <label for="file">ATTACH YOUR FILE HERE:</label>
+  <input type="file" name="file" id="file"><br>
+  <hr>
+</form>
+<h2>SO FINALLY LETS GET STARTED</h2>
+<h3>BELOW ARE SOME OF THE ZONES.PLEASE CHOOSE ANYONE ACCORDING TO YOUR INTEREST.</h3>
+<h3>ZONE 1:THE GAMING ZONE</h3>
+<img src="GZ Logo 500.png" alt="gamingzone" style="width: 100%;">
+<a href="GAMINGZONE.HTML">GAMING ZONE</a>
+<p>CLICK ABOVE TO ENTER THE GAMING ZONE</p><br><br>
+<hr>
+<h3>ZONE 2:THE MUSIC ZONE</h3>
+<img src="music zone.jfif" alt="musiczone" style="width: 100%;">
+<a href="music.html">MUSIC ZONE</a>
+<p>CLICK ABOVE TO ENTER THE MUSIC ZONE</p><br><br>
+<hr>
+<h3>ZONE 3:THE THEATRE</h3>
+<img src="theatre.jfif" alt="theatre" style="width: 100%;">
+<a href="theatre.html">THE THEATRE</a>
+<p>CLICK THE ABOVE TO ENTER THE THEATRE</p><br><br>
+<hr>
+  <div class="content">
+  <img src="IMG_4662.JPG" alt="SAURAV" style="width: 100%;">
+  <h3>ABOUT ME </h3>
+  <p>Hey, this is my homepage, so I have to say something about myself. Sometimes it is hard to introduce yourself because you know yourself so well that you do not know where to start with. Let me give a try to see what kind of image you have about me through my self-description. I hope that my impression about myself and your impression about me are not so different. Here it goes.<br>MY name is SAURAV BORAH and i am a student .I am a dedicated, organized and methodical individual. I have good interpersonal skills, am an excellent team worker and am keen and very willing to learn and develop new skills. I am reliable and dependable and often seek new responsibilities within a wide range of employment areas. I have an active and dynamic approach to work and getting things done. I am determined and decisive. I identify and develop opportunities<br>I’m a nice fun and friendly person, I’m honest and punctual, I work well in a team but also on my own as I like to set myself goals which I will achieve, I have good listening and communication skills. I have a creative mind and am always up for new challenges. I am well organized and always plan ahead to make sure I manage my time well.</p>
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
